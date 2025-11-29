@@ -11,6 +11,7 @@ Control automático de iluminación LED usando una fotoresistencia (LDR) con fil
 El sistema integra sensores, actuadores y lógica de control para demostrar automatización doméstica a pequeña escala.
 
 Características principales del sistema
+
 ✔️ 1. Tendedero Automático (Servo + Sensor de Lluvia)
 
 Sensor digital de lluvia (LOW = lluvia detectada).
@@ -35,13 +36,6 @@ Si hay demasiada luz o flash → LEDs apagados.
 
 Si hay poca luz → LEDs encendidos.
 
-Incluye:
-
-Promedio de 5 muestras
-
-Histeresis
-
-Debounce temporal (evita parpadeos)
 
 Software Utilizado
 Arduino IDE
@@ -51,7 +45,6 @@ Este proyecto está desarrollado y cargado al Arduino UNO mediante:
 🔧 Arduino IDE (Versión recomendada: 1.8.x o 2.x)
 
 Funciones del entorno:
-
 Edición del código en C/C++
 
 Selección del puerto y placa (Arduino UNO)
@@ -59,3 +52,29 @@ Selección del puerto y placa (Arduino UNO)
 Compilación y carga al microcontrolador
 
 Uso del Monitor Serial para visualizar lecturas
+
+Cómo ejecutar el proyecto
+1. Instalar Arduino IDE
+
+Descargar desde:
+https://www.arduino.cc/en/software
+
+2. Abrir el código (.ino)
+
+Cargar este archivo en Arduino IDE.
+
+3. Configurar placa y puerto
+
+Placa: Arduino UNO
+
+Puerto: el que detecte tu PC (COMx)
+
+4. Subir el código
+
+Presiona Upload para compilar y cargar.
+
+5. Abrir el Monitor Serial
+
+Selecciona Tools → Serial Monitor
+
+Baud rate: 9600
